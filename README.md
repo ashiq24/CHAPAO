@@ -13,27 +13,21 @@ Input files should be in FASTA or PHYLIP format.
 ### Compressing Single File
 
 ```bash
-python3 compressSingleFile.py PATH_OF_THE_FILE WINDOW_SIZE OVERLAP_AMOUNT
+python3 compress.py PATH_OF_THE_FILE WINDOW_SIZE OVERLAP_AMOUNT
 ```
 Example:
 ```bash
-python3 compressSingleFile.py /home/Desktop/DATA/avian/chr1_96_s.fasta 30 28
+python3 compress.py /home/Desktop/DATA/avian/chr1_96_s.fasta 30 28
 ```
-This will create a folder with extention **.mstcom** which is the output of the compression algorithm. There will be two separate files in the folder, namely metadata.txt and ref.txt.
+This will create a folder with extention **.chapao** which is the output of the compression algorithm. There will be two separate files in the folder, namely metadata.txt and ref.txt.
 
 **WINDOW_SIZE** and **OVERLAP_AMOUNT** are two important hyperparameters in our algorithm.  With the increase of **WINDOW_SIZE**, the compression gain generally increases at the cost of more compression time. **OVERLAP_AMOUNT** should be less than **WINDOW_SIZE** and its effect is similar to  **WINDOW_SIZE**.
 
 ### Guidelines for hyperparameter selection
 For smaller files (<100MB) **WINDOW_SIZE** of 40-50 and **OVERLAP_AMOUNT** of 35-48 will give a high compression ratio within reasonable amounts of time.
 For larger files (>100MB) **WINDOW_SIZE** of 5-20 and **OVERLAP_AMOUNT** of 3-18 should be used to compress files within reasonable amounts of time.
-### Compressing Directory
-```bash
-python3 compressDirectory.py PATH_OF_THE_DIRECTORY
-```
-Example:
-```bash
-python3 compressDirectory.py /home/Desktop/DATA/avian/ 5 3
-```
+
+
 
 ### Decompressing:
 
@@ -48,7 +42,7 @@ OUTPUT_FORMAT = p to produce decompressed files in **PHYLIP** format
 
 Example:
 ```bash
-python3 decompress.py /home/Desktop/DATA/avian/chr1_96_s.fasta.mstcom/ f
+python3 decompress.py /home/Desktop/DATA/avian/chr1_96_s.fasta.chapao/ f
 ```
 This will create the decompressed files inside the same folder.
 
