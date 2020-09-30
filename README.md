@@ -46,8 +46,8 @@ python3 decompress.py /home/Desktop/DATA/avian/chr1_96_s.fasta.chapao/ f
 ```
 This will create the decompressed files inside the same folder.
 ### Collaborator
-**Abdullah Aman Tutul
-Sifat Md Abdullah**
+**Abdullah Aman Tutul**
+**Sifat Md Abdullah**
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
