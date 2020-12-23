@@ -36,15 +36,15 @@ python3 decompress.py PATH_OF_COMPRESSED_FOLDER OUTPUT_FORMAT(f/p)
 ```
 
 
-OUTPUT_FORMAT = f to produce decompressed files in **FASTA** format
+OUTPUT_FORMAT = 'f' - to produce decompressed files in **FASTA** format
 
-OUTPUT_FORMAT = p to produce decompressed files in **PHYLIP** format
+OUTPUT_FORMAT = 'p' - to produce decompressed files in **PHYLIP** format
 
 Example:
 ```bash
 python3 decompress.py /home/Desktop/DATA/avian/chr1_96_s.fasta.chapao/ f
 ```
-This will create the decompressed files inside the same folder.
+This will create the decompressed file named "Decompressed.txt" inside the same folder.
 ### Contributor
 **Abdullah Aman Tutul**
 
