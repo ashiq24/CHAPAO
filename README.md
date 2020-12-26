@@ -45,6 +45,9 @@ Example:
 python3 decompress.py /home/Desktop/DATA/avian/chr1_96_s.fasta.chapao/ f
 ```
 This will create the decompressed file named "Decompressed.txt" inside the same folder.
+
+### Sample Dataset links
+Links of several MSA datasets, which are used in the development and testing of this technique, can be found [here](https://drive.google.com/file/d/1pIBNOJEmtN-sjwPjj_bLs8byx3dcEkek/view?usp=sharing).
 ### Contributor
 **Abdullah Aman Tutul**
 
