@@ -12,6 +12,7 @@ Input files should be in FASTA or PHYLIP format.
 
 ### Compressing Single File
 
+**Using Python Script**
 ```bash
 python3 compress.py PATH_OF_THE_FILE WINDOW_SIZE OVERLAP_AMOUNT
 ```
@@ -19,6 +20,16 @@ Example:
 ```bash
 python3 compress.py /home/Desktop/DATA/avian/chr1_96_s.fasta 30 28
 ```
+
+**Using EXE**
+```bash
+compress.exe PATH_OF_THE_FILE WINDOW_SIZE OVERLAP_AMOUNT
+```
+Example:
+```bash
+compress.exe /home/Desktop/DATA/avian/chr1_96_s.fasta 30 28
+```
+
 This will create a folder with extention **.chapao** which is the output of the compression algorithm. There will be two separate files in the folder, namely metadata.txt and ref.txt.
 
 **WINDOW_SIZE** and **OVERLAP_AMOUNT** are two important hyperparameters in our algorithm.  With the increase of **WINDOW_SIZE**, the compression gain generally increases at the cost of more compression time. **OVERLAP_AMOUNT** should be less than **WINDOW_SIZE** and its effect is similar to  **WINDOW_SIZE**.
@@ -31,10 +42,11 @@ For larger files (>100MB) **WINDOW_SIZE** of 5-20 and **OVERLAP_AMOUNT** of 3-18
 
 ### Decompressing:
 
+**Using Python Script**
+
 ```bash
 python3 decompress.py PATH_OF_COMPRESSED_FOLDER OUTPUT_FORMAT(f/p)
 ```
-
 
 OUTPUT_FORMAT = 'f' - to produce decompressed files in **FASTA** format
 
@@ -44,7 +56,22 @@ Example:
 ```bash
 python3 decompress.py /home/Desktop/DATA/avian/chr1_96_s.fasta.chapao/ f
 ```
+
 This will create the decompressed file named "Decompressed.txt" inside the same folder.
+
+**Using EXE**
+
+```bash
+decompress.exe PATH_OF_COMPRESSED_FOLDER OUTPUT_FORMAT(f/p)
+```
+
+Here 'f' and 'p' have the same meaning mentioned above.
+
+Example:
+```bash
+decompress.exe /home/Desktop/DATA/avian/chr1_96_s.fasta.chapao/ f
+```
+This will also create the decompressed file named "Decompressed.txt" inside the same folder.
 
 # Sample Dataset
 Links of several MSA datasets, which are used in the development and testing of this technique, can be found [here](https://drive.google.com/file/d/1pIBNOJEmtN-sjwPjj_bLs8byx3dcEkek/view?usp=sharing).
