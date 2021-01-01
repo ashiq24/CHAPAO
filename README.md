@@ -45,7 +45,7 @@ This will create a folder with extention **.chapao** which is the output of the 
 
 ### Guidelines for hyperparameter selection
 For smaller files (<100MB) **WINDOW_SIZE** of 40-50 and **OVERLAP_AMOUNT** of 35-48 will give a high compression ratio within reasonable amounts of time.
-For larger files (>100MB) **WINDOW_SIZE** of 5-20 and **OVERLAP_AMOUNT** of 3-18 should be used to compress files within reasonable amounts of time.
+For larger files (>100MB) **WINDOW_SIZE** of 5-10 and **OVERLAP_AMOUNT** of 3-8 should be used to compress files within reasonable amounts of time.
 
 
 
