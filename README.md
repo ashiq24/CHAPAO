@@ -4,7 +4,15 @@
 CHAPAO is currently under active development with an aim to develop platform independent user friendly executable and appropriate installer. 
 
 # Dependencies 
-Python 3.0 or later 
+Python 3.0 or later
+
+# File Descripttion
+| First Name    | Uses          |
+| ------------- | ------------- |
+| compress.py   | Python script for compression  |
+| decompress.py |  Python script for decompression  |
+| compress.exe  | Windows executeable for compression  |
+| decompress.exe  | Windows executeable for decompression  |
 
 # Usage 
 ### Input File Format
@@ -78,7 +86,7 @@ Links of several MSA datasets, which are used in the development and testing of 
 ### Contributor
 **Abdullah Aman Tutul**
 
-**Sifat Md Abdullah**
+**Sifat Muhammad Abdullah**
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
