@@ -14,7 +14,7 @@ Python 3.0 or later
 | compress.exe  | Windows executable for compression  |
 | decompress.exe  | Windows executable for decompression  |
 
-<sup>Windows sequrity system might consider those executables as malware. If there is any problem in downloading the files, please follow the these alternative links of [python script](https://drive.google.com/drive/folders/1P4cwftp9Pr7oZ87wGLmu_cxTeTDQDVgV?usp=sharing) and [executables](https://drive.google.com/drive/folders/1A10qPlQ4lXjHEr-zKdzGCZiuguB8mUDh?usp=sharing) </sup>
+<sup>Windows sequrity system might consider those executables as malware. If there is any problem in downloading the files, please follow the these alternative links for [python script](https://drive.google.com/drive/folders/1P4cwftp9Pr7oZ87wGLmu_cxTeTDQDVgV?usp=sharing) and [executables](https://drive.google.com/drive/folders/1A10qPlQ4lXjHEr-zKdzGCZiuguB8mUDh?usp=sharing) </sup>
 # Usage 
 ### Input File Format
 Input files should be in FASTA or PHYLIP format.
